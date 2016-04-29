@@ -1,0 +1,21 @@
+.editor {
+}
+
+.editor canvas {
+    border: 2px solid black;
+}
+
+.editor .pixels {
+    float: left;
+    text-align: center;
+}
+
+.editor .palette {
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.editor #paletteswap {
+    margin-top: 10px;
+}

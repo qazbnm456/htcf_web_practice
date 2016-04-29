@@ -1,0 +1,17 @@
+htcf_db:
+  image: lobsiinvok_mysql
+  environment:
+    - MYSQL_ROOT_PASSWORD=qwfiroi2nho1
+    - MYSQL_USER=htcf_root
+    - MYSQL_PASSWORD=htcf_password
+    - MYSQL_DATABASE=htcf
+
+htcf:
+  build: .
+  environment:
+    - TEMPLATE_NGINX_HTML=1
+    - DBHOST=htcf_db
+  links:
+    - htcf_db:htcf_db
+  ports:
+    - "22222:80"

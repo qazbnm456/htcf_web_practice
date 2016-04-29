@@ -1,0 +1,5 @@
+User-Agent: *
+Disallow: /uploads
+Disallow: /flag.php
+Disallow: /source.php
+Disallow: /4dm1n.php
